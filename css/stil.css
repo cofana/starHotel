@@ -1,0 +1,450 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: fantasy;
+	box-shadow: border-box;
+}
+.cleaner{
+	clear:both;
+}
+
+body {
+	background-image: url("../slike/pozadina.jpg");
+	width: 100%;
+	height: 100%;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #967296;
+}
+header img {
+	height: 100px;
+	width: auto;
+	margin-left: 10%;
+	float:left;
+}
+header ul {
+	height: 100%;
+	width: 60%;
+	list-style: none;
+	float:right;
+	margin-top: 30px;
+}
+header ul li {
+	display: inline;
+	font-size: 20px;
+	margin-right: 50px;
+}
+header ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: font-size 1000ms ease,color 1000ms ease;
+}
+.active{
+	font-size:25px;
+	text-transform: uppercase;
+	color: #4C5760;
+}
+header ul li a:hover{
+	color: #ADB9E3;
+}
+#sadrzajMain{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+#sadrzajMain h1{
+	font-size: 50px;
+	color: #A379C9;
+	margin-top:2%;
+	text-transform: uppercase;
+	animation: text 2s 1;
+}
+#sadrzajMain h2{
+	font-size: 100px;
+	color: #A379C9;
+	text-transform: uppercase;
+	animation: text2 2s 1;
+}
+#tekstMain {
+	color: #4A4A4A;
+	font-size: 30px;
+}
+@keyframes text {
+	0%{
+		opacity: 0;
+		margin-left: 400px;
+		font-size: 200px;
+	}
+	100%{
+		font-size: 50px;
+		opacity: 1;
+		margin-left:0px;
+	}
+}
+@keyframes text2{
+	0%{
+		opacity: 0;
+		margin-right: 400px;
+		font-size:40px;
+	}
+	100%{
+		opacity: 1;
+		margin-right: 0;
+		font-size: 100px;
+	}
+}
+#tekstMain {
+	width: 80%;
+	height: 50%;
+	margin: 0px auto;
+	margin-top: 50px;
+	text-align: justify;
+	font-size: 18px;
+}
+footer {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0%;
+	background-color: #967296;
+}
+footer p {
+	float: left;
+	margin-top: 15px;
+	font-size: 17px;
+	margin-left: 40px;
+	color: #fff;
+}
+#mreze{
+	float: right;
+	margin-top: 10px;
+	margin-right: 40px;
+}
+.fab , .fas{
+	font-size: 24px;
+	margin: 0px 15px;
+	transition: opacity 500ms ease, transform 500ms ease;
+	text-decoration: none;
+}
+.fa-rss{
+	color: #fff;
+}
+.fa-sitemap{
+	color:#fff;
+}
+.fa-facebook-f{
+	color:#fff;
+}
+.fa-instagram{
+	color:#fff;
+}
+.fa-twitter{
+	color:#fff;
+}
+.fa-whatsapp{
+	color:#fff;
+}
+.fab:hover , .fas:hover{
+	opacity: 0.5;
+	transform: scale(0.7);
+}
+#sadrzajKontakt{
+	width: 60%;
+	height: 70%;
+	background-color: rgba(0,0,0,0.6);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 0px 20px #000;
+	margin-top: 70px;
+	margin-left: 320px;
+	animation: sadrzajKontakt 2s 1;
+}
+@keyframes sadrzajKontakt {
+	0%{
+		opacity: 0;
+		margin-left: 0px;
+	}
+	100%{
+		opacity: 1;
+		margin-left: 320px;
+	}
+}
+#sadrzajKontakt h1 {
+	font-size: 60px;
+	color: #fff;
+}
+::placeholder {
+	color: #A59E8C;
+	opacity: 1;
+}
+.tekstForme{
+	border: 1px solid #fff;
+	margin: 8px 0px;
+	padding: 12px 18px;
+	border-radius: 8px;
+	color: #fff;
+}
+.tekstForme label{
+	display: block;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.tekstForme input, .txt textarea{
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	color: #fff;
+}
+#send{
+	display: inline-block;
+	background-color: rgba(0,0,0,0.1);
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	border:1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 16px;
+	width: 100%;
+	font-size: 25px;
+	border-radius: 8px;
+	transition: color 800ms ease-in, background-color 800ms ease-in;
+	text-decoration: none;
+	letter-spacing: 3px;
+}
+#send:hover{
+	color: #A59E8C;
+	background-color: #fff;
+}
+#blokAutor {
+	width: 80%;
+	height: 550px;
+	border: 1px solid #000;
+	margin: 40px 150px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px #000;
+	-webkit-animation: fadein 2s;
+	animation: fadein 3s;
+	background-color: rgba( 0, 0, 0, .5);
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#slikaAutor img{
+	float: right;
+	margin: -170px 40px;
+	border-radius: 10px;
+}
+#tekstAutor h1 {
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 270px;
+	letter-spacing: 5px;
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 40px;
+}
+#tekstAutor p {
+	text-align: justify;
+	width: 600px;
+	margin-left: 80px;
+	font-size: 22px;
+	margin-top: 20px;
+	color: #152238;
+}
+#slikeBlok{
+	width: 80%;
+	height: 500px;
+	margin: 0px auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#slikeBlok img {
+	width: 21%;
+	height: 170px;
+	margin: 20px;
+	transition: transform 500ms ease;
+	border-radius: 10px;
+	animation: slicice 1000ms ease-in;
+}
+#slikeBlok img:hover {
+	transform: scale(1.8);
+}
+@keyframes slicice {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+#cene {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+#cene .soba {
+	width: 18%;
+	height: 600px;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.5) 100%);
+	border-radius: 1em;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.soba h2 {
+	padding: 5px 20px;
+	border-radius: 5px;
+	color:#D7CEB2;
+	background-color:#A379C9 ;
+	position: absolute;
+	top:0%;
+	text-align: center;
+	text-transform: uppercase;
+	left: 10%;
+	letter-spacing: 2px;
+}
+.prva {
+	animation: prva 500ms ease;
+}
+.druga {
+	animation: prva 800ms ease;
+}
+.treca {
+	animation: prva 1100ms ease;
+}
+.cetvrta{
+	animation: prva 1400ms ease;
+}
+.zadnja{
+	animation: prva 1700ms ease;
+}
+@keyframes prva {
+	0%{
+		margin-top: 500px;
+	}
+	100%{
+		margin-top: 0px;
+	}
+}
+#cene .soba h1 {
+	font-size: 40px;
+	color: #A379C9;
+	margin-top: 15%;
+}
+#cene .soba p {
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 13%;
+}
+#cene .soba span {
+	color: #d4af37;
+	font-size: 40px;
+	position: absolute;
+	bottom: 15%;
+	left: 15%;
+}
+.soba a{
+	color :#fff;
+	padding: 5px 40px;
+	border: 1px solid #fff;
+	position : absolute;
+	bottom: 5%;
+	text-decoration: none;
+	left: 14%;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: border 500ms ease, color 500ms ease;
+}
+.soba a:hover{
+	border: 1px solid #d4af37;
+	color: #d4af37;
+}
+#rezervisi {
+	width: 60%;
+	height: 70%;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 12px;
+	box-shadow: 0px 0px 20px #000;
+	padding: 30px 40px;
+	margin: 50px 280px;
+	animation: rezanim ease-in 1000ms;
+}
+@keyframes rezanim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#rezervisi h1 {
+	margin-top: 0px;
+	text-transform: uppercase;
+	font-size: 40px;
+	letter-spacing: 3px;
+	color: #fff;
+	margin-left: 32%;
+	margin-bottom: 20px;
+}
+#rezervisi img {
+	width: 50px;
+	height: auto;
+	margin-top: 0px;
+}
+#dd{
+	font-size: 20px;
+}
+#mas{
+	margin-top: 20px;
+}
+#dd input{
+	margin-top: 10px;
+}
+.tekst{
+	margin-top: 8px;
+	width: 95,5%;
+	padding: 12px 18px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+}
+.tekst label{
+	display: block;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.inline input{
+	display: inline;
+}
+.tekst input, .tekst textarea{
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	color: #fff;
+}
+#kartice{
+	margin-top: 8px;
+	width: 95,5%;
+	padding: 12px 18px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
